@@ -1,33 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
   color: white;
+  font-size: 64px;
+  text-shadow: 4px 6px #0a2769;
+  background-color: #fa002d;
 }
 
-.App-link {
-  color: #61dafb;
+.inning-stats {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: #221e1f;
+  color: white;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  background-color: black;
+  color: red;
+  padding: 0 5px;
+}
+
+.game-stats {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  background-color: #027039;
+  color: white;
+  padding: 10px 1%;
+}
+
+table {
+  border: 2px solid white;
+  width: 100%;
+  empty-cells: show;
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}
+
+.dashboard {
+  border: 2px solid gray;
+  background-color: silver;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 8px 2%;
+  margin: 15px;
+  background-color: silver;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
 }
