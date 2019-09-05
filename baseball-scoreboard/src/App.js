@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+
+import Display from './components/Display';
+import Dashboard from './components/Dashboard';
 
 function App() {
+  const [strikes, setStrikes] = useState(0);
+  const [balls, setBalls] = useState(0);
+
+  const handleStrike = () => {
+    setStrikes(prevState => (prevState === 2 ? 0 : prevState + 1));
+  };
+
+  const handleBall = () => {
+    setBalls(prevState => (prevState === 3 ? 0 : prevState + 1));
+  };
+
+  const handleFoul = () => {
+    setStrikes(prevState => (prevState === 2 ? prevState : prevState + 1));
+  };
+
+  const handleHit = () => {
+    setStrikes(0);
+    setBalls(0);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Hey batter batter batter...</h1>
+      <Display strikes={strikes} balls={balls} />
+      <Dashboard
+        handleStrike={handleStrike}
+        handleBall={handleBall}
+        handleFoul={handleFoul}
+        handleHit={handleHit}
+      />
     </div>
   );
 }
