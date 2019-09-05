@@ -44,9 +44,9 @@ export default function Bases(props) {
   return (
     <div>
       <div>
-        <h2>1st Base: {first && 'Man On'}</h2>
-        <h2>2nd Base: {second && 'Man On'}</h2>
-        <h2>3rd Base: {third && 'Man On'}</h2>
+        <h2>1st Base: {first && '⚾'}</h2>
+        <h2>2nd Base: {second && '⚾'}</h2>
+        <h2>3rd Base: {third && '⚾'}</h2>
       </div>
       <div>
         <button onClick={handleSingle}>Single</button>
