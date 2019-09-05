@@ -8,6 +8,7 @@ import Dashboard from './components/Dashboard';
 function App() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
+  const [outs, setOuts] = useState(0);
 
   const handleStrike = () => {
     setStrikes(prevState => (prevState === 2 ? 0 : prevState + 1));
@@ -26,15 +27,20 @@ function App() {
     setBalls(0);
   };
 
+  const handleOuts = () => {
+    setOuts(prevState => (prevState === 2 ? 0 : prevState + 1));
+  };
+
   return (
     <div className='App'>
       <h1>Hey batter batter batter...</h1>
-      <Display strikes={strikes} balls={balls} />
+      <Display strikes={strikes} balls={balls} outs={outs} />
       <Dashboard
         handleStrike={handleStrike}
         handleBall={handleBall}
         handleFoul={handleFoul}
         handleHit={handleHit}
+        handleOuts={handleOuts}
       />
     </div>
   );

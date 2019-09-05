@@ -7,6 +7,7 @@ export default function Dashboard(props) {
       <button onClick={props.handleBall}>Ball</button>
       <button onClick={props.handleFoul}>Foul</button>
       <button onClick={props.handleHit}>Hit</button>
+      <button onClick={props.handleOuts}>Out</button>
     </div>
   );
 }
