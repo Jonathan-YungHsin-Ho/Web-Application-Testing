@@ -4,6 +4,7 @@ import './App.css';
 
 import Display from './components/Display';
 import Dashboard from './components/Dashboard';
+import Bases from './components/Bases';
 
 function App() {
   const [strikes, setStrikes] = useState(0);
@@ -49,31 +50,9 @@ function App() {
     setHomeRuns(prevState => handleRuns(prevState, runs));
   };
 
-  // const handleHomeRun = runs => {
-  //   setHomeRuns(prevState => {
-  //     return prevState.map((element, index) => {
-  //       if (index === inning - 1) {
-  //         element = element + runs;
-  //       }
-  //       return element;
-  //     });
-  //   });
-  // };
-
   const handleGuestRun = runs => {
     setGuestRuns(prevState => handleRuns(prevState, runs));
   };
-
-  // const handleGuestRun = runs => {
-  //   setGuestRuns(prevState => {
-  //     return prevState.map((element, index) => {
-  //       if (index === inning - 1) {
-  //         element = element + runs;
-  //       }
-  //       return element;
-  //     });
-  //   });
-  // };
 
   const handleHomeError = () => {
     setHomeErrors(prevState => prevState + 1);
@@ -124,6 +103,7 @@ function App() {
         handleInning={handleInning}
         handleRestart={handleRestart}
       />
+      <Bases />
     </div>
   );
 }
