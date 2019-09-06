@@ -80,6 +80,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Hey batter batter batter...</h1>
+      <Bases />
       <Display
         strikes={strikes}
         balls={balls}
@@ -103,7 +104,6 @@ function App() {
         handleInning={handleInning}
         handleRestart={handleRestart}
       />
-      <Bases />
     </div>
   );
 }

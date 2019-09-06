@@ -42,11 +42,20 @@ export default function Bases(props) {
   };
 
   return (
-    <div>
-      <div>
-        <h2>1st Base: {first && '⚾'}</h2>
-        <h2>2nd Base: {second && '⚾'}</h2>
-        <h2>3rd Base: {third && '⚾'}</h2>
+    <div className='field'>
+      <h2>Runs Scored: </h2>
+      <div className='bases'>
+        <h3>
+          <div className='base'>{second ? '⚾' : '⬜'}</div>
+        </h3>
+        <div className='first-and-third'>
+          <h3>
+            <div className='base'>{third ? '⚾' : '⬜'}</div>
+          </h3>
+          <h3>
+            <div className='base'> {first ? '⚾' : '⬜'}</div>
+          </h3>
+        </div>
       </div>
       <div>
         <button onClick={handleSingle}>Single</button>
