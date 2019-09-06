@@ -32,8 +32,8 @@ export default function Display(props) {
               <th>7</th>
               <th>8</th>
               <th>9</th>
-              <th>Runs</th>
-              <th>Errors</th>
+              <th>R</th>
+              <th>E</th>
             </tr>
           </thead>
           <tbody>
