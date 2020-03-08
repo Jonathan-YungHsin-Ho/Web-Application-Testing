@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 64px;
+  text-shadow: 4px 6px #0a2769;
+  background-color: #fa002d;
+}
+
+.inning-stats {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: #221e1f;
+  color: white;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span {
+  background-color: black;
+  color: red;
+  padding: 0 5px;
+}
+
+.game-stats {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  background-color: #027039;
+  color: white;
+  padding: 10px 1%;
+}
+
+table {
+  border: 2px solid white;
+  width: 100%;
+  empty-cells: show;
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}
+
+.dashboard {
+  border: 2px solid gray;
+  background-color: silver;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 8px 2%;
+  margin: 15px;
+  background-color: silver;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+}
+
+.field {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: green;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field h2 {
+  color: white;
+}
+
+.bases {
+  background-color: tan;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid tan;
+}
+
+.base {
+  transform: rotate(45deg);
+  font-size: 40px;
+  position: relative;
+  top: -30px;
+}
+
+.first-and-third {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
